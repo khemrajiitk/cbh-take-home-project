@@ -5,8 +5,7 @@
   "main": " ",
   "scripts": {
     "test": "jest",
-    "start": "node index.js",
-    "ticket-breakdown": "node ticket-breakdown.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",

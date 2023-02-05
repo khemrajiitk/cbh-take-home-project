@@ -16,7 +16,22 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
-here's how to get started:
-1. [Install Node.js](https://nodejs.org/en/download/) (I used `^17`, the latest LTS)
-2. Run `npm i` in this repo to install dependencies
-3. Run `npm run ticket-breakdown` to launch `ticket-breakdown.js`
+1. Database migration:- We need to add new Table for manage Facilities and their custom Agent Id. This table includes Fields(id, FacilitieID, AgentID, FacilitieAgentID(custom Field)).<br /> 
+Time:- It will take 1 day(for new person in system it may take 2 days)
+2. Api changes for custom Agent ID:- we need to add new field(FacilitieAgentID) in shift creation logic/api. and store this data in the table.<br />
+Writting test cases for the same.<br />
+Time:- It will take 1 day
+3. getShiftsByFacility Update:- We need to modify it so will also fetch new id(FacilitieAgentID) from database to generate report<br/>
+Writting test cases for the same.<br />
+Time:- It will take 1 day
+4. generateReport Update:- We need to modify it so new id(FacilitieAgentID) is added in report<br/>
+Writting test cases for the same.<br />
+Time:- It will take 1 day(I am assuming very basic impact in the ui of report, for exact timing I need to know technology used in report generation and new report styles)
+5. Add custom ID feature in booking portal:- We need to provide a option to add custom agent id during booking shift. This is front end ticket.<br/>
+Writting test cases for the same.<br />
+Time:- It will take 1 day
+
+Note:- It also needs some time of QA team I am assuming I need to complete on dev tasks.
+
+
+
