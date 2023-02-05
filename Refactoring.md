@@ -9,3 +9,5 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+In previously given code there are nested if else conditions and we are checking for invalid input in the middle of function. I checked validation initially and if it is invalid simply return default output. In my implementation sequence on execution is very close to a business requirement so it is more readable
